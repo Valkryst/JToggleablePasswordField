@@ -2,6 +2,8 @@
 between showing and hiding the password. It features a clickable visibility icon that allows users to temporarily reveal
 their password to verify its correctness.
 
+Requires Java 11.
+
 ## Table of Contents
 
 * [Installation](https://github.com/Valkryst/JToggleablePasswordField#installation)
