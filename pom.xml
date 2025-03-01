@@ -62,6 +62,7 @@
 
     <build>
         <plugins>
+
             <!-- Runs tests during build. -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -86,6 +87,32 @@
                 <configuration>
                     <javadocExecutable>${java.home}/bin/javadoc</javadocExecutable>
                 </configuration>
+            </plugin>
+
+            <!--
+                Remaps the package names of the Ikonli library to prevent conflicts with dependent projects which
+                use different versions of the Ikonli library.
+            -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>3.5.2</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                        <configuration>
+                            <relocations>
+                                <relocation>
+                                    <pattern>org.kordamp.ikonli</pattern>
+                                    <shadedPattern>com.valkryst.internal.ikonli</shadedPattern>
+                                </relocation>
+                            </relocations>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
