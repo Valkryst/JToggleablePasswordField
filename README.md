@@ -34,7 +34,7 @@ Add JToggleablePasswordField as a dependency.
 
 ```
 dependencies {
-	implementation 'com.github.Valkryst:JToggleablePasswordField:2025.03.01'
+	implementation 'com.github.Valkryst:JToggleablePasswordField:2025.5.8'
 }
 ```
 
@@ -56,7 +56,7 @@ Add JToggleablePasswordField as a dependency.
 <dependency>
     <groupId>com.github.Valkryst</groupId>
     <artifactId>JToggleablePasswordField</artifactId>
-    <version>2025.03.01</version>
+    <version>2025.5.8</version>
 </dependency>
 ```
 
@@ -71,7 +71,7 @@ resolvers += "jitpack" at "https://jitpack.io"
 Add JToggleablePasswordField as a dependency.
 
 ```
-libraryDependencies += "com.github.Valkryst" % "JToggleablePasswordField" % "2025.03.01"
+libraryDependencies += "com.github.Valkryst" % "JToggleablePasswordField" % "2025.5.8"
 ```
 
 ## Features

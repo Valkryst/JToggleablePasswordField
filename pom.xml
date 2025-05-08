@@ -6,7 +6,7 @@
 
     <groupId>com.github.Valkryst</groupId>
     <artifactId>JToggleablePasswordField</artifactId>
-    <version>2025.03.01</version>
+    <version>2025.5.8</version>
     <packaging>jar</packaging>
     <name>JToggleablePasswordField</name>
 
